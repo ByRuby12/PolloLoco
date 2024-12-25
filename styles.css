@@ -9,7 +9,7 @@ body {
     margin: 0;
     flex-direction: column;
     overflow: hidden;
-    background-image: url('/EXTRAS/fondo-pantalla.png'); /* Ruta al fondo */
+    background-image: url('../EXTRAS/fondo-pantalla.png'); /* Ruta al fondo */
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
