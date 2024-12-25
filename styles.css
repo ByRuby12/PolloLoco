@@ -1,0 +1,180 @@
+/* Estilo global */
+body {
+    background-color: #f5d000; /* Fondo dorado */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url('/EXTRAS/fondo-pantalla.png'); /* Ruta al fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.hidden {
+    display: none;
+}
+
+#background-cards {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Esto evita que interfiera con la interacción con otros elementos */
+    z-index: -1; /* Coloca el fondo detrás de todo el contenido */
+}
+
+/* Menú */
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f1c40f; /* Fondo dorado */
+    padding: 30px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out forwards;
+    width: 100%;
+    border-radius: 20px;
+    max-width: 600px; /* Máximo ancho para mantener la proporción */
+}
+
+#menu h1 {
+    font-size: 40px;
+    color: #2c3e50; /* Azul oscuro */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    width: 250px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 15px;
+    background-color: #34495e; /* Azul grisáceo */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #2ecc71; /* Verde vivo */
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: translateY(2px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+#how-to-play-section, #game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f39c12; /* Fondo amarillo */
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out forwards;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo del overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de las cartas */
+.game-card {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), inset 0px 0px 15px rgba(0, 0, 0, 0.4); /* Borde interior más intenso */
+    animation: fadeIn 0.5s ease-in-out;
+    border: 3px solid #000000; /* Borde exterior */
+}
+
+
+#card-status {
+    font-size: 1.2rem;
+    color: #34495e; /* Azul grisáceo */
+    margin-top: 10px;
+}
+
+#cards-shown {
+    background-color: #FFCC00; /* Fondo amarillo */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50; /* Azul oscuro */
+    width: 250px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#how-to-play-section button:hover, #game button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-5px) scale(1.1);
+}
+
+#how-to-play-section button:active, #game button:active {
+    transform: translateY(2px) scale(1.05);
+}
+
+/* Títulos en las secciones */
+#how-to-play-section h2, #game h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Efecto de transición suave al pasar a siguiente carta */
+#card-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

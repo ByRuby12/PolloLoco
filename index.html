@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Pollo Loco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú principal -->
+    <div id="menu">
+        <h1>JUEGO DEL POLLO LOCO</h1>
+        <button id="play">Jugar</button>
+        <button id="how-to-play">Cómo Jugar</button>
+        <button id="exit">Salir</button>
+    </div>
+
+    <!-- Instrucciones de cómo jugar -->
+    <div id="how-to-play-section" class="hidden">
+        <div class="card">
+            <img id="qr-image" src="/EXTRAS/NORMAS.png" alt="QR Code" class="game-card">
+        </div>
+        <button id="back-to-menu-htp">Volver al Menú</button>
+    </div>
+
+    <!-- Juego con las cartas -->
+    <div id="game" class="hidden">
+        <div id="card-status">
+            <p>Cartas mostradas: <span id="cards-shown">0</span> de <span id="total-cards">0</span></p>
+        </div>
+        <div id="card-display"></div>
+        <button id="next-card">Siguiente Carta</button>
+        <button id="back-to-menu-game">Volver al Menú</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
