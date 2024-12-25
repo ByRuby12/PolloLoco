@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cards = [];
         categories.forEach(category => {
             for (let i = 1; i <= 20; i++) {
-                cards.push(`../${category}/${i}.png`);
+                cards.push(`${category}/${i}.png`);
             }
         });
         cards = cards.sort(() => Math.random() - 0.5); // Barajar las cartas
