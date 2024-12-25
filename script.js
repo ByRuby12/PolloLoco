@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     exitButton.addEventListener("click", () => {
         if (confirm("¿Estás seguro de que deseas salir?")) {
-            window.location.href = "https://www.google.com"; // Redirigir a una página de salida o cerrar sesión
+            window.close(); // Redirigir a una página de salida o cerrar sesión
         }
     });
 
