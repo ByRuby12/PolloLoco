@@ -23,12 +23,11 @@ body {
 
 /* Estilos para los créditos */
 #credits {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #34495e; /* Color gris oscuro */
-    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #000000; /* Color gris oscuro */
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    opacity: 0.7; /* Ligera opacidad para que no destaque demasiado */
 }
 
 .hidden {
@@ -63,9 +62,9 @@ body {
 
 #menu h1 {
     font-size: 30px;
-    color: #2c3e50; /* Azul oscuro */
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
+    color: #000000; /* Azul oscuro */
+    margin-bottom: 10px;
+    font-family: 'Russo One', sans-serif; /* Aplica la fuente Poppins */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -77,15 +76,15 @@ button {
     cursor: pointer;
     border-radius: 12px;
     margin: 10px;
-    background-color: #34495e; /* Azul grisáceo */
+    background-color: #000000; /* Azul grisáceo */
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Bangers', cursive;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    background-color: #2ecc71; /* Verde vivo */
+    background-color: #0077ff; /* Verde vivo */
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -101,13 +100,6 @@ button:active {
     }
     to {
         opacity: 1;
-    }
-}
-
-@media (max-width: 600px) {
-    button {
-        width: 200px;
-        font-size: 18px;
     }
 }
 
@@ -154,8 +146,9 @@ button:active {
 /* Estado de las cartas */
 #card-status {
     font-weight: bold;
-    font-size: 15px;
-    color: #34495e; /* Azul grisáceo */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #000000; /* Azul grisáceo */
     margin-top: 10px;
 }
 
@@ -163,9 +156,9 @@ button:active {
     background-color: #FFCC00; /* Fondo amarillo */
     padding: 10px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-    color: #2c3e50; /* Azul oscuro */
+    color: #000000; /* Azul oscuro */
     width: 250px;
     margin-top: 20px;
     text-align: center;
@@ -199,6 +192,7 @@ button:active {
 
 /* Ajustes adicionales para dispositivos pequeños */
 @media (max-width: 600px) {
+    
     body {
         padding: 20px; /* Agrega algo de espacio en pantallas más pequeñas */
     }
@@ -210,12 +204,27 @@ button:active {
     }
 
     #menu h1 {
-        font-size: 25px; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+        font-size: 15px; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+        margin: 15px;
     }
 
     button {
         width: 100%;
-        font-size: 18px;
-        padding: 15px;
+        font-size: 15px;
+        padding: 10px;
+        margin: 3px;
+    }
+
+    #card-status {
+        font-size: 15px;
+    }
+
+    #cards-shown {
+        font-size: 15px;
+    }
+
+    #credits {
+        margin-top: 10px;
+        font-size: 10px;
     }
 }
