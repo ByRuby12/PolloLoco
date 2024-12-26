@@ -85,12 +85,11 @@ button {
 
 button:hover {
     background-color: #0077ff; /* Verde vivo */
-    transform: translateY(-5px) scale(1.1);
+    transform: translateY(-1px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 button:active {
-    transform: translateY(2px) scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -165,16 +164,6 @@ button:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo de los botones en las secciones */
-#how-to-play-section button:hover, #game button:hover {
-    background-color: #2ecc71;
-    transform: translateY(-5px) scale(1.1);
-}
-
-#how-to-play-section button:active, #game button:active {
-    transform: translateY(2px) scale(1.05);
-}
-
 /* Títulos en las secciones */
 #how-to-play-section h2, #game h2 {
     font-size: 2rem;
@@ -187,7 +176,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 /* Ajustes adicionales para dispositivos pequeños */
