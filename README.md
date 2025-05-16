@@ -42,9 +42,14 @@ Cada carpeta contiene archivos y dinámicas específicas para ampliar la jugabil
 
 ## 🚀 Cómo Jugar
 
-1. Abre el archivo `index.html` en cualquier navegador moderno.
-2. Navega por las secciones y elige tu categoría favorita.
-3. Sigue las instrucciones y ¡diviértete superando los retos del Pollo Loco!
+¡No necesitas descargar nada!  
+Puedes jugar gratis directamente desde tu navegador:
+
+👉 [JUGAR AHORA](https://byruby12.github.io/PolloLoco/)
+
+1. Haz clic en el enlace.
+2. Explora las secciones del juego.
+3. Sigue las instrucciones en pantalla y ¡diviértete!
 
 ---
 
